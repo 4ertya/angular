@@ -1,0 +1,11 @@
+.example-spacer {
+  flex: 1 1 auto;
+}
+.mat-raised-button{
+  margin: 5px;
+  color: #3f51b5;
+}
+a{
+  text-decoration: none;
+  color: white;
+}

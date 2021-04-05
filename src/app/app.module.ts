@@ -10,6 +10,11 @@ import {MatInputModule} from '@angular/material/input';
 import {MatButtonModule} from '@angular/material/button';
 import {MatCardModule} from '@angular/material/card';
 import {AuthModule} from './auth/auth.module';
+import {HttpClientModule} from '@angular/common/http';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
+import {SharedModule} from './shared/shared.module';
+
+
 
 @NgModule({
   declarations: [
@@ -24,7 +29,11 @@ import {AuthModule} from './auth/auth.module';
     MatInputModule,
     MatButtonModule,
     MatCardModule,
-    AuthModule
+    AuthModule,
+    HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule,
+    SharedModule
   ],
   providers: [],
   bootstrap: [AppComponent]
