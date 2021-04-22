@@ -1,0 +1,63 @@
+<div fxLayoutAlign="center center" fxFlexFill class="main-div">
+  <mat-card fxFlex="50">
+    <mat-toolbar color="primary">Registration</mat-toolbar>
+    <form fxLayoutAlign="stretch" fxLayout="column" class="example-form" [formGroup]="formGroup"
+          (ngSubmit)="loginProcess()">
+      <table class="example-full-width">
+        <tr>
+          <td>
+            <mat-form-field class="example-full-width">
+              <mat-label>Name</mat-label>
+              <input matInput formControlName="name">
+            </mat-form-field>
+          </td>
+          <td>
+            <mat-form-field class="example-full-width">
+              <mat-label>Surname</mat-label>
+              <input matInput formControlName="surname">
+            </mat-form-field>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <mat-form-field class="example-full-width">
+              <mat-label>Password</mat-label>
+              <input matInput formControlName="password" (input)="passwordMatchValidator(formGroup)">
+            </mat-form-field>
+          </td>
+          <td>
+            <mat-form-field class="example-full-width">
+              <mat-label>Repeat password</mat-label>
+              <input matInput name="repeated_password" formControlName="repeated_password" appEqualValidator="password">
+              <mat-error *ngIf="formGroup.get('repeated_password').hasError('notEqual')">
+                Passwords do not match
+              </mat-error>
+              <mat-error *ngIf="formGroup.get('repeated_password').hasError('required')">
+                Passwords is required!
+              </mat-error>
+            </mat-form-field>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <mat-form-field class="example-full-width">
+              <mat-label>E-mail</mat-label>
+              <input matInput formControlName="email">
+            </mat-form-field>
+          </td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>
+            <button mat-raised-button fxLayoutAlign="center" color="primary" type="submit">
+              Register <span class="material-icons">how_to_reg</span>
+            </button>
+          </td>
+        </tr>
+      </table>
+    </form>
+
+  </mat-card>
+</div>

@@ -4,7 +4,6 @@
 
 .login-form{
   padding: 20px;
-  height: +30px;
 }
 
 .mat-form-field{
@@ -16,10 +15,10 @@
 
 .mat-toolbar{
   border-radius: 40px 0 0 0;
-  margin-bottom: 10px;
 }
 
 .mat-card{
   border-radius: 40px 0 40px 0;
 }
+
 

@@ -1,0 +1,22 @@
+.content {
+  padding: 16px;
+}
+
+.price {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.mat-raised-button {
+  line-height: 30px;
+}
+
+.mat-card-image {
+  border-radius: 15px;
+  width: 100%;
+  margin: 0 0 16px 0;
+}
+
+.example-spacer {
+  flex: 1 1 auto;
+}

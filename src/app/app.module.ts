@@ -13,6 +13,8 @@ import {AuthModule} from './auth/auth.module';
 import {HttpClientModule} from '@angular/common/http';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {SharedModule} from './shared/shared.module';
+import {CertificatesModule} from './certificates/certificates.module';
+import {UsersModule} from './users/users.module';
 
 
 
@@ -33,7 +35,9 @@ import {SharedModule} from './shared/shared.module';
     HttpClientModule,
     FormsModule,
     ReactiveFormsModule,
-    SharedModule
+    SharedModule,
+    CertificatesModule,
+    UsersModule
   ],
   providers: [],
   bootstrap: [AppComponent]

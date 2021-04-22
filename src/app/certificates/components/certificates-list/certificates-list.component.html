@@ -1,0 +1,24 @@
+<div class="content">
+<div fxLayout="row wrap" fxLayoutGap="16px grid">
+  <div fxFlex="25" *ngFor="let certificate of certificates">
+    <mat-card class="example-card">
+      <mat-card-header>
+        <mat-card-title>{{certificate.name}}</mat-card-title>
+      </mat-card-header>
+      <img mat-card-image fxLayoutAlign="center" src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
+      <mat-card-content>
+        <p>
+          {{certificate.description}}
+        </p>
+      </mat-card-content>
+      <hr>
+
+      <mat-card-actions fxLayoutAlign="row center">
+        <span class="price">${{certificate.price}}</span>
+        <span class="example-spacer"></span>
+        <button mat-raised-button color="primary">Details</button>
+      </mat-card-actions>
+    </mat-card>
+  </div>
+</div>
+</div>

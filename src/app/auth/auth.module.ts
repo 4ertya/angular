@@ -10,21 +10,25 @@ import {FlexLayoutModule} from '@angular/flex-layout';
 import {MatButtonModule} from '@angular/material/button';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {ReactiveFormsModule} from '@angular/forms';
+import { RegisterComponent } from './components/register/register.component';
+import {SharedModule} from '../shared/shared.module';
 
 @NgModule({
   declarations: [
-    LoginComponent
+    LoginComponent,
+    RegisterComponent
   ],
-  imports: [
-    CommonModule,
-    AuthRoutingModule,
-    MatCardModule,
-    MatFormFieldModule,
-    MatInputModule,
-    FlexLayoutModule,
-    MatButtonModule,
-    MatToolbarModule,
-    ReactiveFormsModule
-  ]
+    imports: [
+        CommonModule,
+        AuthRoutingModule,
+        MatCardModule,
+        MatFormFieldModule,
+        MatInputModule,
+        FlexLayoutModule,
+        MatButtonModule,
+        MatToolbarModule,
+        ReactiveFormsModule,
+        SharedModule
+    ]
 })
 export class AuthModule { }
